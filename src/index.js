@@ -20,7 +20,7 @@ const storage = new Storage({
 });
 
 const usersBucket = storage.bucket(process.env.USERS_BUCKET);
-const ordersBucket = storage.bucket(process.env.MESSAGES_BUCKET);
+const ordersBucket = storage.bucket(process.env.ORDERS_BUCKET);
 
 const JWT_MIDDLEWARE = jwtMiddleware({
   secret: process.env.WEB_TOKEN_SECRET,
